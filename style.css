@@ -27,7 +27,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 32px 0px;
-    gap: 32px;
+    gap: 1em;
     margin-left: 4em;
     margin-right: 4em;
 }
@@ -58,7 +58,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     padding: 0px;
-    gap: 32px;
+    gap: 1em;
 }
 
 .menu-nav-item {
@@ -94,7 +94,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0px;
-    gap: 16px;
+    gap: 2em;
     margin-top: 2em;
     margin-bottom: 2em;
     margin-left: 4em;
@@ -115,6 +115,7 @@ body {
     font-weight: 700;
     font-style: normal;
     font-size: 3.25em;
+    padding-right: 1em; /* FIX PADDING RIGHT ON OLD SAFARI */
 }
 
 .banner-texto {
@@ -243,3 +244,32 @@ body {
 .foot a:hover {
     text-decoration: underline;
 }
+
+/* SUPPORTS GAP OLD SAFARI */
+
+@supports not (gap: 2em) {
+    .flex-container {
+      margin: -1em;
+    }
+    .flex-container > * {
+      margin: 1em;
+    }
+  }
+
+@supports not (gap: 1em) {
+    .flex-container {
+      margin: -0.5em;
+    }
+    .flex-container > * {
+      margin: 0.5em;
+    }
+  }
+
+  @supports not (gap: 0.25em) {
+    .flex-container {
+      margin: -0.125em;
+    }
+    .flex-container > * {
+      margin: 0.125em;
+    }
+  }
