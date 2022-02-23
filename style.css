@@ -6,34 +6,240 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 100%;
     background-color: #e5e5e5;
-    font-family: 'Raleway', sans-serif;
-    color: #464646;
+    padding: 0 1em 6em 1em;
 }
 
-h1 {
+/* CSS DO MENU */
+
+.menu-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0px;
+    gap: 32px;
+    margin-left: 4em;
+    margin-right: 4em;
+}
+
+.menu-logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+}
+
+.menu-logo-img {
+    width: 24px;
+    height: 24px;
+}
+
+.menu-logo-titulo {
+    font-family: 'Raleway', sans-serif;
+    color: #464646;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1em;
+}
+
+.menu-nav-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+}
+
+.menu-nav-item {
+    font-family: 'Raleway', sans-serif;
+    color: #464646;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1em;
+}
+
+.menu-nav-item:hover {
+    text-decoration: underline;
+}
+
+.menu-nav-item-contact {
+    font-family: 'Raleway', sans-serif;
+    color: #464646;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1em;
+}
+
+.menu-nav-item-contact:hover {
+    text-decoration: underline;
+}
+
+/* CSS BANNER */
+
+.banner-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 4em;
+    margin-right: 4em;
+}
+
+.banner-top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 1250px;
+    padding: 0px;
+}
+
+.banner-titulo {
+    font-family: 'Raleway', sans-serif;
+    color: #464646;
     font-weight: 700;
     font-style: normal;
     font-size: 3.25em;
 }
 
-p {
+.banner-texto {
+    font-family: 'Raleway', sans-serif;
+    color: #464646;
     font-weight: 400;
     font-style: normal;
     font-size: 1.375em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
 }
 
-a {
+.banner-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 0px;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    gap: 1em;
+}
+
+.banner-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 0.25em;
+}
+
+.banner-link-text {
+    font-family: 'Raleway', sans-serif;
+    color: #464646;
     font-weight: 500;
     font-style: normal;
     font-size: 1em;
-    color: #464646;
-    text-decoration: none;
 }
 
-a:hover {
+.banner-link-img {
+    width: 20px;
+    height: 20px;
+}
+
+.banner-image {
+    width: 368px;
+    height: 368px;
+    border-radius: 460px;
+}
+
+/* CSS SOBRE MIM */
+
+.sobre-container {
+    display: flex;
+    flex-direction: column;
+    padding: 64px;
+    background: #eaf2fd;
+}
+
+.sobre-top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 1250px;
+    padding: 0px;
+}
+
+.sobre-titulo {
+    font-family: 'Raleway', sans-serif;
+    color: #464646;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2em;
+}
+
+.sobre-texto {
+    font-family: 'Raleway', sans-serif;
+    color: #464646;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.sobre-link a {
+    font-family: 'Raleway', sans-serif;
+    color: #464646;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1em;
+}
+
+.sobre-link a:hover {
+    text-decoration: underline;
+}
+
+/* CSS DO RODAPÉ */
+
+.foot {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #eaf2fd;
+    text-align: center;
+    padding: 1em;
+}
+
+.foot p {
+    font-family: 'Raleway', sans-serif;
+    color: #c74634;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1em;
+}
+
+.foot a {
+    font-family: 'Raleway', sans-serif;
+    color: #464646;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1em;
+}
+
+.foot a:hover {
     text-decoration: underline;
 }

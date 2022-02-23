@@ -3,7 +3,7 @@
     <head>
         <meta property="og:title" content="Challenge Front End Oracle ONE" />
         <meta property="og:type" content="website" />
-        <!-- <meta property="og:image" content="#" /> -->
+        <meta property="og:image" content="https://raw.githubusercontent.com/marceloicampos/challenge-oracle-front-end/main/images/avatar_celo.jpg" />
         <meta property="og:url" content="https://marceloicampos.github.io/challenge-oracle-front-end/index.html" />
         <meta property="og:description" content="Web Challenge" />
         <meta name="keywords" content="HTML5, CSS3, JavaScript, Oracle, Oracle ONE, Challenge, Front End" />
@@ -15,40 +15,66 @@
         <title>Challenge Front End Oracle ONE</title>
     </head>
     <body>
-        <header class="menu" style="background-color: yellow" id="topo">
-            <img src="./images/logo_name3x.svg" alt="" />
-            <h2>Marcelo</h2>
-            <nav>
-                <a href="./index.html#sobre">Sobre Mim</a> | <a href="./index.html#skills_hobbies">Skills e Hobbies</a> |
-                <a href="./index.html#cursos">Formação e Cursos</a> | <a href="./index.html#projetos">Projetos</a> |
-                <a href="./index.html#contato">Contato</a>
+        <header class="menu-container" id="topo">
+            <section class="menu-logo-container">
+                <img class="menu-logo-img" src="./images/logo_name3x.svg" alt="logo menu" />
+                <h1 class="menu-logo-titulo">Marcelo Campos</h1>
+            </section>
+            <nav class="menu-nav-container">
+                <a class="menu-nav-item" href="./index.html#sobre">Sobre Mim</a>
+                <a class="menu-nav-item" href="./index.html#skills_hobbies">Skills e Hobbies</a>
+                <a class="menu-nav-item" href="./index.html#cursos">Formação e Cursos</a> <a class="menu-nav-item" href="./index.html#projetos">Projetos</a>
+                <a class="menu-nav-item-contact" href="./index.html#contato">Contato</a>
             </nav>
         </header>
-        <main>
-            <section class="hello" style="background-color: red">
-                <article>
-                    <h2>Olá, meu nome é Marcelo Ildefonso Campos e sou desenvolvedor de páginas web.</h2>
-                    <p>Eu sou estudante de HTML, CSS e Javascript e atualmente estou participando no projeto Oracle ONE na Alura.</p>
-                    <p>
-                        <a href="#">Github<img src="./images/arrow_back_black3x.svg" alt="logo link" /></a>
-                        <a href="#">LinkedIn<img src="./images/arrow_back_black3x.svg" alt="logo link" /></a>
-                        <a href="#">Instagram<img src="./images/arrow_back_black3x.svg" alt="logo link" /></a>
-                        <a href="#">Facebook<img src="./images/arrow_back_black3x.svg" alt="logo link" /></a>
-                        <a href="#">Twitter<img src="./images/arrow_back_black3x.svg" alt="logo link" /></a>
-                        <a href="#">My Web Page<img src="./images/arrow_back_black3x.svg" alt="logo link" /></a>
-                        <a href="#">marceloicampos@outlook<img src="./images/arrow_back_black3x.svg" alt="logo link" /></a>
-                        <a href="#">Currículo em PDF<img src="./images/arrow_back_black3x.svg" alt="logo link" /></a>
-                    </p>
+        <main class="main-container">
+            <section class="banner-container">
+                <article class="banner-top">
+                    <h1 class="banner-titulo">Olá, meu nome é Marcelo Ildefonso Campos e sou desenvolvedor de páginas web.</h1>
+                    <p class="banner-texto">Eu sou estudante de HTML, CSS e Javascript e atualmente estou participando do projeto Oracle ONE na Alura.</p>
+                    <div class="banner-links">
+                        <a class="banner-link" href="https://github.com/marceloicampos" target="_blank"
+                            ><p class="banner-link-text">Github</p>
+                            <img class="banner-link-img" src="./images/icone_github.png" alt="logo link"
+                        /></a>
+                        <a class="banner-link" href="https://www.linkedin.com/in/marceloicampos/" target="_blank"
+                            ><p class="banner-link-text">LinkedIn</p>
+                            <img class="banner-link-img" src="./images/icone_linkedin.png" alt="logo link"
+                        /></a>
+                        <a class="banner-link" href="https://www.instagram.com/marceloicampos/" target="_blank"
+                            ><p class="banner-link-text">Instagram</p>
+                            <img class="banner-link-img" src="./images/icone_instagram.png" alt="logo link"
+                        /></a>
+                        <a class="banner-link" href="https://www.facebook.com/marceloicampos/" target="_blank"
+                            ><p class="banner-link-text">Facebook</p>
+                            <img class="banner-link-img" src="./images/icone_facebook.png" alt="logo link"
+                        /></a>
+                        <a class="banner-link" href="https://twitter.com/marceloicampos" target="_blank"
+                            ><p class="banner-link-text">Twitter</p>
+                            <img class="banner-link-img" src="./images/icone_twitter.png" alt="logo link"
+                        /></a>
+                        <a class="banner-link" href="https://marceloicampos.com/" target="_blank"
+                            ><p class="banner-link-text">Website</p>
+                            <img class="banner-link-img" src="./images/icone_www.png" alt="logo link"
+                        /></a>
+                        <a class="banner-link" href="#" target="_blank"
+                            ><p class="banner-link-text">Currículo em PDF</p>
+                            <img class="banner-link-img" src="./images/arrow_back_black3x.svg" alt="logo link"
+                        /></a>
+                    </div>
                 </article>
-                <figure>
-                    <img width="200px" height="200px" src="./images/avatar_celo.jpg" alt="avatar marcelo" />
-                </figure>
+                <img class="banner-image" src="https://avatars.githubusercontent.com/u/71357926?v=4" alt="avatar marcelo" />
             </section>
-            <section class="about" style="background-color: yellow">
-                <article id="sobre">
-                    <h2>Sobre Min</h2>
-                    <p>Lorem ipsum dolor sit. Quos culpa. Aut dicta, quae quam? Lorem ipsum dolor sit provident minima, aut magna porro!</p>
-                    <p><a href="./index.html#topo">Para o Topo</a></p>
+            <section class="sobre-container" id="sobre">
+                <article class="sobre-top">
+                    <h1 class="sobre-titulo">Sobre Min</h1>
+                    <p class="sobre-texto">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus.
+                        Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium.
+                        Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.
+                    </p>
+                    <p class="sobre-link"><a href="./index.html#topo">PARA O TOPO</a></p>
                 </article>
             </section>
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
@@ -81,8 +107,15 @@
                 </article>
             </section>
         </main>
-        <footer class="foot" style="background-color: green">
-            <p>Marcelo Ildefonso Campos</p>
+        <footer class="foot">
+            <p>
+                Challenge Front End Oracle ONE por
+                <a href="https://marceloicampos.com/about" target="_blank">Marcelo Ildefonso Campos</a>
+            </p>
+            <p>
+                <a href="https://github.com/marceloicampos/challenge-oracle-front-end" target="_blank">Projeto no Git Hub</a> |
+                <a href="https://www.linkedin.com/in/marceloicampos/" target="_blank">Meu Linkedin</a>
+            </p>
         </footer>
     </body>
 </html>
