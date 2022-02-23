@@ -114,8 +114,10 @@ body {
     color: #464646;
     font-weight: 700;
     font-style: normal;
-    font-size: 3.25em;
-    padding-right: 1em; /* FIX PADDING RIGHT ON OLD SAFARI */
+    font-size: 2.2em;
+    text-align: justify;
+    margin-right: 1em;
+    /* FIX PADDING RIGHT ON OLD SAFARI */
 }
 
 .banner-texto {
@@ -123,7 +125,8 @@ body {
     color: #464646;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.375em;
+    font-size: 1.2em;
+    text-align: justify;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
 }
@@ -197,6 +200,7 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 1em;
+    text-align: justify;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
 }
@@ -249,27 +253,27 @@ body {
 
 @supports not (gap: 2em) {
     .flex-container {
-      margin: -1em;
+        margin: -1em;
     }
     .flex-container > * {
-      margin: 1em;
+        margin: 1em;
     }
-  }
+}
 
 @supports not (gap: 1em) {
     .flex-container {
-      margin: -0.5em;
+        margin: -0.5em;
     }
     .flex-container > * {
-      margin: 0.5em;
+        margin: 0.5em;
     }
-  }
+}
 
-  @supports not (gap: 0.25em) {
+@supports not (gap: 0.25em) {
     .flex-container {
-      margin: -0.125em;
+        margin: -0.125em;
     }
     .flex-container > * {
-      margin: 0.125em;
+        margin: 0.125em;
     }
-  }
+}
