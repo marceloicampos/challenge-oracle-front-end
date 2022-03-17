@@ -7,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
     font-size: 100%;
 }
 
@@ -54,6 +55,10 @@ body {
     line-height: 19px;
     color: #464646;
     margin: 0px 8px;
+}
+
+.menu-logo-titulo:hover {
+    text-decoration: underline;
 }
 
 .menu-nav {
@@ -144,7 +149,7 @@ body {
     text-align: justify;
 }
 
-.banner-links {
+.banner-link-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -159,10 +164,10 @@ body {
     flex-direction: row;
     align-items: center;
     padding: 0px;
-    margin: 0px 32px 0px 0px;
+    margin: 0px 16px 0px 0px;
 }
 
-.banner-link-text {
+.banner-link-item {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 500;
@@ -172,10 +177,13 @@ body {
     margin: 0px 4px;
 }
 
+.banner-link-item:hover {
+    text-decoration: underline;
+}
+
 .banner-link-img {
     width: 24px;
     height: 24px;
-    margin: 0px 4px;
 }
 
 .banner-image {
@@ -271,42 +279,4 @@ body {
 
 .foot a:hover {
     text-decoration: underline;
-}
-
-/* SUPPORTS GAP OLD SAFARI */
-
-@supports not (gap: 1em) {
-    .menu-container {
-        margin: -0.5em;
-    }
-    .menu-container > * {
-        margin: 0.5em;
-    }
-}
-
-@supports not (gap: 1em) {
-    .menu-nav {
-        margin: -0.5em;
-    }
-    .menu-nav > * {
-        margin: 0.5em;
-    }
-}
-
-@supports not (gap: 1em) {
-    .banner-container {
-        margin: -0.5em;
-    }
-    .banner-container > * {
-        margin: 0.5em;
-    }
-}
-
-@supports not (gap: 1em) {
-    .banner-links {
-        margin: -0.5em;
-    }
-    .banner-links > * {
-        margin: 0.5em;
-    }
 }
