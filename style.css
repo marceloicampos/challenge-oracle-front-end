@@ -7,15 +7,16 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-size: 100%;
 }
 
 body {
+    background: #f5f5f5;
     display: flex;
     flex-direction: column;
-
-    font-size: 100%;
-    background-color: #e5e5e5;
-    padding: 0 1em 6em 1em;
+    /* align-items: center; */
+    margin: 0px;
+    padding: 0px 0px 96px 0px;
 }
 
 /* CSS DO MENU */
@@ -27,49 +28,52 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 32px 0px;
+    margin: 32px 32px 0px 32px;
     gap: 1em;
-    margin-left: 4em;
-    margin-right: 4em;
 }
 
-.menu-logo-container {
+.menu-logo {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0px;
-    /* gap: 1em; */
+    margin: 0px 32px;
 }
 
 .menu-logo-img {
     width: 24px;
     height: 24px;
+    margin: 0px;
 }
 
 .menu-logo-titulo {
-    font-family: 'Raleway', sans-serif;
-    color: #464646;
-    font-weight: 700;
+    font-family: 'Raleway';
     font-style: normal;
-    font-size: 1em;
-    margin-left: 1em;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+    margin: 0px 8px;
 }
 
-.menu-nav-container {
+.menu-nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     padding: 0px;
+    margin: 0px;
     gap: 1em;
 }
 
 .menu-nav-item {
-    font-family: 'Raleway', sans-serif;
-    color: #464646;
-    font-weight: 500;
+    font-family: 'Raleway';
     font-style: normal;
-    font-size: 1em;
-    margin-left: 1em;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+    margin: 0px 32px;
 }
 
 .menu-nav-item:hover {
@@ -77,17 +81,24 @@ body {
 }
 
 .menu-nav-item-contact {
-    font-family: 'Raleway', sans-serif;
-    color: #464646;
-    font-weight: 700;
+    font-family: 'Raleway';
     font-style: normal;
-    font-size: 1em;
-    margin-left: 1em;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+    margin: 0px 0px;
 }
 
 .menu-nav-item-contact:hover {
     text-decoration: underline;
 }
+
+/* CSS MAIN CONTAINER */
+
+/* .main-container {
+
+} */
 
 /* CSS BANNER */
 
@@ -98,41 +109,39 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0px;
-    gap: 2em;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    margin-left: 4em;
-    margin-right: 4em;
+    margin: 32px 32px;
+    gap: 1em;
 }
 
 .banner-top {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 800px;
     padding: 0px;
+    margin: 0px 32px;
+    max-width: 65%;
 }
 
 .banner-titulo {
-    font-family: 'Raleway', sans-serif;
-    color: #464646;
-    font-weight: 700;
+    font-family: 'Raleway';
     font-style: normal;
-    font-size: 2.2em;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 61px;
+    color: #464646;
+    margin: 24px 0px;
     text-align: justify;
-    margin-right: 1em;
-    /* FIX PADDING RIGHT ON OLD SAFARI */
 }
 
 .banner-texto {
-    font-family: 'Raleway', sans-serif;
-    color: #464646;
-    font-weight: 400;
+    font-family: 'Raleway';
     font-style: normal;
-    font-size: 1.2em;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #464646;
+    margin: 24px 0px;
     text-align: justify;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
 }
 
 .banner-links {
@@ -141,8 +150,7 @@ body {
     flex-wrap: wrap;
     align-items: flex-start;
     padding: 0px;
-    padding-top: 0.2em;
-    padding-bottom: 0.2em;
+    margin: 24px 0px;
     gap: 1em;
 }
 
@@ -151,25 +159,29 @@ body {
     flex-direction: row;
     align-items: center;
     padding: 0px;
-    gap: 0.25em;
+    margin: 0px 32px 0px 0px;
 }
 
 .banner-link-text {
-    font-family: 'Raleway', sans-serif;
-    color: #464646;
-    font-weight: 500;
+    font-family: 'Raleway';
     font-style: normal;
-    font-size: 1em;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+    margin: 0px 4px;
 }
 
 .banner-link-img {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
+    margin: 0px 4px;
 }
 
 .banner-image {
     width: 368px;
     height: 368px;
+    margin: 0px 0px 0px 24px;
     border-radius: 460px;
 }
 
@@ -178,7 +190,9 @@ body {
 .sobre-container {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     padding: 64px;
+    margin: 32px 0px;
     background: #eaf2fd;
 }
 
@@ -186,35 +200,41 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 1000px;
     padding: 0px;
+    margin: 10px 0px;
+    max-width: 65%;
 }
 
 .sobre-titulo {
-    font-family: 'Raleway', sans-serif;
-    color: #464646;
-    font-weight: 700;
+    font-family: 'Raleway';
     font-style: normal;
-    font-size: 2em;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #464646;
+    margin: 16px 0px;
 }
 
 .sobre-texto {
-    font-family: 'Raleway', sans-serif;
-    color: #464646;
-    font-weight: 400;
+    font-family: 'Raleway';
     font-style: normal;
-    font-size: 1em;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+    margin: 16px 0px;
     text-align: justify;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
 }
 
 .sobre-link a {
     font-family: 'Raleway', sans-serif;
-    color: #464646;
-    font-weight: 700;
     font-style: normal;
-    font-size: 1em;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+    margin: 16px 0px;
+    text-align: justify;
 }
 
 .sobre-link a:hover {
@@ -228,7 +248,7 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #eaf2fd;
+    background-color: #f5f5f5;
     text-align: center;
     padding: 1em;
 }
@@ -255,29 +275,38 @@ body {
 
 /* SUPPORTS GAP OLD SAFARI */
 
-@supports not (gap: 2em) {
-    .flex-container {
-        margin: -1em;
-    }
-    .flex-container > * {
-        margin: 1em;
-    }
-}
-
 @supports not (gap: 1em) {
-    .flex-container {
+    .menu-container {
         margin: -0.5em;
     }
-    .flex-container > * {
+    .menu-container > * {
         margin: 0.5em;
     }
 }
 
-@supports not (gap: 0.25em) {
-    .flex-container {
-        margin: -0.125em;
+@supports not (gap: 1em) {
+    .menu-nav {
+        margin: -0.5em;
     }
-    .flex-container > * {
-        margin: 0.125em;
+    .menu-nav > * {
+        margin: 0.5em;
+    }
+}
+
+@supports not (gap: 1em) {
+    .banner-container {
+        margin: -0.5em;
+    }
+    .banner-container > * {
+        margin: 0.5em;
+    }
+}
+
+@supports not (gap: 1em) {
+    .banner-links {
+        margin: -0.5em;
+    }
+    .banner-links > * {
+        margin: 0.5em;
     }
 }
