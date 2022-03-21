@@ -14,6 +14,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./reset.css" />
         <link rel="stylesheet" href="./style.css" />
         <title>Challenge Front End Oracle ONE</title>
     </head>
@@ -24,21 +25,22 @@
                 <h1><a class="menu-logo-titulo" href="https://marceloicampos.com/" target="_blank">Marcelo Campos</a></h1>
             </section>
             <nav>
-                <ul class="menu-nav">
-                    <li><a class="menu-nav-item" href="./index.html#sobre">Sobre Mim</a></li>
-                    <li><a class="menu-nav-item" href="./index.html#skills_hobbies">Skills e Hobbies</a></li>
-                    <li><a class="menu-nav-item" href="./index.html#cursos">Cursos</a></li>
-                    <li><a class="menu-nav-item" href="./index.html#projetos">Projetos</a></li>
-                    <li><a class="menu-nav-item-contact" href="./index.html#contato">Contato</a></li>
+                <ul class="menu-links">
+                    <li><a class="menu-links-item" href="./index.html#sobre">Sobre Mim</a></li>
+                    <li><a class="menu-links-item" href="./index.html#skills-hobbies">Skills e Hobbies</a></li>
+                    <li><a class="menu-links-item" href="./index.html#cursos">Cursos</a></li>
+                    <li><a class="menu-links-item" href="./index.html#projetos">Projetos</a></li>
+                    <li><a class="menu-links-item-contact" href="./index.html#contato">Contato</a></li>
                 </ul>
             </nav>
         </header>
-        <main class="main-container">
+        <main>
             <section class="banner-container">
+                <figure class="banner-image"></figure>
                 <article class="banner-top">
-                    <h1 class="banner-titulo">Olá, meu nome é Marcelo Ildefonso Campos e sou desenvolvedor de páginas web.</h1>
+                    <h1 class="banner-titulo">Olá, sou Marcelo Ildefonso Campos e sou desenvolvedor de páginas web.</h1>
                     <p class="banner-texto">Eu sou estudante de HTML, CSS e Javascript e atualmente estou participando do projeto Oracle ONE na Alura.</p>
-                    <div class="banner-link-container">
+                    <article class="banner-link-container">
                         <p class="banner-link">
                             <a class="banner-link-item" href="https://github.com/marceloicampos" target="_blank">GitHub</a
                             ><img class="banner-link-img" src="./images/icon-github.svg" alt="logo github" />
@@ -67,9 +69,8 @@
                             <a class="banner-link-item" href="##########################" target="_blank">Currículo PDF</a
                             ><img class="banner-link-img" src="./images/icon-file.svg" alt="logo arrow" />
                         </p>
-                    </div>
+                    </article>
                 </article>
-                <img class="banner-image" src="https://avatars.githubusercontent.com/u/71357926?v=4" alt="avatar marcelo" />
             </section>
             <section class="sobre-container" id="sobre">
                 <article class="sobre-top">
@@ -80,40 +81,134 @@
                         adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium.
                         Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.
                     </p>
-                    <p class="sobre-texto">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus.
-                        Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium.
-                        Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.
-                    </p>
-                    <p class="sobre-link"><a href="./index.html#topo">PARA O TOPO</a></p>
+                    <p><a class="sobre-link" href="./index.html#topo">PARA O TOPO</a></p>
                 </article>
             </section>
-            <section id="skills_hobbies" class="stack-area-container">
-                <article class="skills-container">
-                    <h1>Skills</h1>
-                    <p>images</p>
-                    <p><a href="./index.html#topo">Para o Topo</a></p>
-                </article>
-                <article class="hobbies-container">
-                    <h1>Hobbies</h1>
-                    <p>images</p>
-                    <p><a href="./index.html#topo">Para o Topo</a></p>
-                </article>
-                <article id="cursos" class="cursos-container">
-                    <h1>Cursos</h1>
-                    <p>images</p>
-                    <p><a href="./index.html#topo">Para o Topo</a></p>
-                </article>
+
+            <section class="shc-container" id="skills-hobbies">
+                <section class="skills-top">
+                    <h1 class="shc-titulo">Skills</h1>
+                    <article>
+                        <ul class="shc-list">
+                            <li class="shc-item">
+                                <img class="shc-item-img" src="./images/icon-github.svg" alt="#" />
+                                <p class="shc-item-text">Html 5</p>
+                            </li>
+                            <li class="shc-item">
+                                <img class="shc-item-img" src="./images/icon-github.svg" alt="#" />
+                                <p class="shc-item-text">CSS 3</p>
+                            </li>
+                            <li class="shc-item">
+                                <img class="shc-item-img" src="./images/icon-github.svg" alt="#" />
+                                <p class="shc-item-text">Javascript</p>
+                            </li>
+                            <li class="shc-item">
+                                <img class="shc-item-img" src="./images/icon-github.svg" alt="#" />
+                                <p class="shc-item-text">Java</p>
+                            </li>
+                            <li class="shc-item">
+                                <img class="shc-item-img" src="./images/icon-github.svg" alt="#" />
+                                <p class="shc-item-text">NodeJS</p>
+                            </li>
+                            <li class="shc-item">
+                                <img class="shc-item-img" src="./images/icon-github.svg" alt="#" />
+                                <p class="shc-item-text">ReactJS</p>
+                            </li>
+                        </ul>
+                    </article>
+                    <p><a class="shc-top-link" href="./index.html#topo">PARA O TOPO</a></p>
+                </section>
+                <section class="hobbies-top">
+                    <h1 class="shc-titulo">Hobbies</h1>
+                    <article>
+                        <ul class="shc-list">
+                            <li class="shc-item">
+                                <img class="shc-item-img" src="./images/icon-github.svg" alt="#" />
+                                <p class="shc-item-text">Assistir Séries</p>
+                            </li>
+                            <li class="shc-item">
+                                <img class="shc-item-img" src="./images/icon-github.svg" alt="#" />
+                                <p class="shc-item-text">Cozinhar</p>
+                            </li>
+                            <li class="shc-item">
+                                <img class="shc-item-img" src="./images/icon-github.svg" alt="#" />
+                                <p class="shc-item-text">Tirar Fotos</p>
+                            </li>
+                            <li class="shc-item">
+                                <img class="shc-item-img" src="./images/icon-github.svg" alt="#" />
+                                <p class="shc-item-text">Games</p>
+                            </li>
+                            <li class="shc-item">
+                                <img class="shc-item-img" src="./images/icon-github.svg" alt="#" />
+                                <p class="shc-item-text">Caminhadas</p>
+                            </li>
+                            <li class="shc-item">
+                                <img class="shc-item-img" src="./images/icon-github.svg" alt="#" />
+                                <p class="shc-item-text">Suporte Técnico</p>
+                            </li>
+                        </ul>
+                    </article>
+                    <p><a href="./index.html#topo" class="shc-top-link">PARA O TOPO</a></p>
+                </section>
+                <section class="cursos-top" id="cursos">
+                    <h1 class="shc-titulo">Cursos</h1>
+                    <article>
+                        <ul class="shc-list">
+                            <li class="shc-item-cursos">
+                                <section class="shc-item-cursos-section">
+                                    <img class="shc-item-cursos-img" src="./images/logo_cursos_alura.svg" alt="#" />
+                                </section>
+                                <p class="shc-item-cursos-text">Desenvolvimento Pessoal</p>
+                                <p class="shc-item-cursos-year">2022</p>
+                            </li>
+                            <li class="shc-item-cursos">
+                                <section class="shc-item-cursos-section">
+                                    <img class="shc-item-cursos-img" src="./images/logo_cursos_alura.svg" alt="#" />
+                                </section>
+                                <p class="shc-item-cursos-text">Curso de Empreendedorismo</p>
+                                <p class="shc-item-cursos-year">2022</p>
+                            </li>
+                            <li class="shc-item-cursos">
+                                <section class="shc-item-cursos-section">
+                                    <img class="shc-item-cursos-img" src="./images/logo_cursos_alura.svg" alt="#" />
+                                </section>
+                                <p class="shc-item-cursos-text">Formação em Business Agility</p>
+                                <p class="shc-item-cursos-year">2022</p>
+                            </li>
+                            <li class="shc-item-cursos">
+                                <section class="shc-item-cursos-section">
+                                    <img class="shc-item-cursos-img" src="./images/logo_cursos_alura.svg" alt="#" />
+                                </section>
+                                <p class="shc-item-cursos-text">Formação em Back-End Javascript</p>
+                                <p class="shc-item-cursos-year">2022</p>
+                            </li>
+                            <li class="shc-item-cursos">
+                                <section class="shc-item-cursos-section">
+                                    <img class="shc-item-cursos-img" src="./images/logo_cursos_alura.svg" alt="#" />
+                                </section>
+                                <p class="shc-item-cursos-text">Formação em Front-End, HTML e CSS</p>
+                                <p class="shc-item-cursos-year">Em Progresso</p>
+                            </li>
+                            <li class="shc-item-cursos">
+                                <section class="shc-item-cursos-section">
+                                    <img class="shc-item-cursos-img" src="./images/logo_cursos_alura.svg" alt="#" />
+                                </section>
+                                <p class="shc-item-cursos-text">Formação em Java Iniciante</p>
+                                <p class="shc-item-cursos-year">Em Progresso</p>
+                            </li>
+                        </ul>
+                    </article>
+                    <p><a href="./index.html#topo" class="shc-top-link">PARA O TOPO</a></p>
+                </section>
             </section>
-            <section class="experience" style="background-color: red">
+            <section class="experience">
                 <article id="projetos">
                     <h2>Projetos</h2>
                     <p>images</p>
                     <p><a href="./index.html#topo">Para o Topo</a></p>
                 </article>
             </section>
-            <section class="contact" style="background-color: yellow">
+            <section class="contact">
                 <article id="contato">
                     <h2>Contato</h2>
                     <p>images</p>
