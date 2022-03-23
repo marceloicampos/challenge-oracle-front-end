@@ -398,7 +398,7 @@ body {
     margin: 8px 8px;
 }
 
-.shc-top-link {           
+.shc-top-link {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -414,17 +414,23 @@ body {
 /*CSS DO PROJETOS*/
 
 .experience {
-    background-color: yellow;
-    max-width: 1440px;
+    max-width: 1136px;
+}
+
+.experience img {
+    width: 360px;
 }
 
 /*CSS DO CONTATO*/
 
 .contact {
-    background-color: red;
+    background-color: #c2d9f8;
     max-width: 1440px;
 }
 
+.contact img {
+    width: 360px;
+}
 /* CSS DO RODAPÉ */
 
 .foot {
