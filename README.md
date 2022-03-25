@@ -3,6 +3,6 @@ Challenge Oracle Front End
 
 20/02/2022 - Inicio do Projeto
 
-## Preview
+## ![Preview - CLIQE AQUI](https://marceloicampos.github.io/challenge-oracle-front-end/)
 
-![](./preview.png)
+![](https://raw.githubusercontent.com/marceloicampos/challenge-oracle-front-end/main/preview.png)
