@@ -38,6 +38,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 8px;
 }
 
 .menu-logo-img {
@@ -75,6 +76,7 @@ body {
     line-height: 19px;
     color: #464646;
     margin: 0 0 0 8px;
+    padding: 8px;
 }
 
 .menu-links-item:hover {
@@ -89,6 +91,7 @@ body {
     line-height: 19px;
     color: #464646;
     margin: 0 0 0 8px;
+    padding: 8px;
 }
 
 .menu-links-item-contact:hover {
@@ -101,7 +104,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     max-width: 1136px;
     margin: 32px auto;
@@ -110,8 +113,8 @@ body {
 }
 
 .banner-image {
-    width: 368px;
-    height: 368px;
+    width: 360px;
+    height: 360px;
     border-radius: 460px;
     margin: 4px;
     background-image: url('https://avatars.githubusercontent.com/u/71357926?v=4');
@@ -231,6 +234,7 @@ body {
     font-size: 16px;
     line-height: 19px;
     color: #464646;
+    padding: 8px 0;
 }
 
 .sobre-link:hover {
@@ -291,7 +295,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     max-width: 1136px;
     padding: 0px;
@@ -405,6 +409,7 @@ body {
     font-size: 16px;
     line-height: 19px;
     color: #464646;
+    padding: 8px 0;
 }
 
 .shc-top-link:hover {
@@ -413,24 +418,172 @@ body {
 
 /*CSS DO PROJETOS*/
 
-.experience {
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
     max-width: 1136px;
 }
 
-.experience img {
-    width: 360px;
+.experience-titulo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #464646;
+}
+
+.experience-top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    margin: 32px 0;
+    gap: 4em;
+}
+
+.experience-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2em;
+}
+
+.experience-img-decoder {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 16px;
+    max-width: 784px;
+    max-height: 432px;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 1));
+    order: 0;
+}
+
+.experience-infos-decoder {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 16px;
+    order: 1;
+}
+
+.experience-img-forca {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 16px;
+    max-width: 784px;
+    max-height: 432px;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 1));
+    order: 1;
+}
+
+.experience-infos-forca {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 16px;
+    order: 0;
+}
+
+.experience-infos-titulo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #464646;
+}
+
+.experience-infos-texto {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+    margin: 8px 0px;
+}
+
+.experience-infos-botao {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+.experience-infos-botao-claro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #2a7ae4;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.experience-infos-botao-claro:hover {
+    border: 2px solid #000000;
+}
+
+.experience-infos-botao-claro-texto {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2a7ae4;
+    margin: 0px;
+    padding: 16px;
+}
+
+.experience-infos-botao-escuro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #2a7ae4;
+    background: #2a7ae4;
+    margin: 0px 16px;
+}
+
+.experience-infos-botao-escuro:hover {
+    border: 2px solid #000000;
+}
+
+.experience-infos-botao-escuro-texto {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    margin: 0px;
+    padding: 16px;
 }
 
 /*CSS DO CONTATO*/
 
-.contact {
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    margin: 32px auto;
     background-color: #c2d9f8;
     max-width: 1440px;
 }
 
-.contact img {
-    width: 360px;
+.contact-sub-container {
+    background-color: tomato;
 }
+
 /* CSS DO RODAPÉ */
 
 .foot {
@@ -440,7 +593,7 @@ body {
     width: 100%;
     background-color: #f5f5f5;
     text-align: center;
-    padding: 1em;
+    padding: 16px;
 }
 
 .foot p {
@@ -448,7 +601,7 @@ body {
     color: #c74634;
     font-weight: 700;
     font-style: normal;
-    font-size: 1em;
+    font-size: 16px;
 }
 
 .foot a {
@@ -456,9 +609,67 @@ body {
     color: #464646;
     font-weight: 700;
     font-style: normal;
-    font-size: 1em;
+    font-size: 16px;
 }
 
 .foot a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 1100px) {
+    .experience-img-forca {
+        order: 0;
+    }
+    .experience-infos-forca {
+        order: 1;
+    }
+}
+
+@media (max-width: 784px) {
+    .experience-container img {
+        max-width: 704px;
+        max-height: 320px;
+    }
+    .contact-container img {
+        display: none;
+    }
+    .experience-img-forca {
+        order: 0;
+    }
+    .experience-infos-forca {
+        order: 1;
+    }
+}
+
+@media (max-width: 608px) {
+    .experience-container img {
+        max-width: 448px;
+        max-height: 224px;
+    }
+    .contact-container img {
+        display: none;
+    }
+    .experience-img-forca {
+        order: 0;
+    }
+    .experience-infos-forca {
+        order: 1;
+    }
+}
+
+@media (max-width: 384px) {
+    .experience-container img {
+        max-width: 296px;
+        max-height: 144px;
+    }
+    .contact-container img {
+        display: none;
+    }
+    .experience-img-forca {
+        order: 0;
+    }
+    .experience-infos-forca {
+        order: 1;
+    }
+
 }

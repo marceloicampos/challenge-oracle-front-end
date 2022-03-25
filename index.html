@@ -14,6 +14,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script defer src="./script.js"></script>
         <link rel="stylesheet" href="./reset.css" />
         <link rel="stylesheet" href="./style.css" />
         <title>Challenge Front End Oracle ONE</title>
@@ -237,42 +238,116 @@
                     <p><a class="shc-top-link" href="./index.html#topo">PARA O TOPO</a></p>
                 </section>
             </section>
-            <section class="experience">
-                <article id="projetos">
-                    <h1>Projetos</h1>
-                    <img src="./images/logo_projeto.svg" alt="logo do projeto" />
-                    <p>Decodificador de texto</p>
-                    <p>Challenge Alura Codificador</p>
-                    <p>
-                        <a href="https://github.com/marceloicampos/challenge-oracle-logica-decoder-ptbr-main" target="_blank"
-                            ><input type="button" value="Repositório"
-                        /></a>
-                    </p>
-                    <p>
-                        <a href="https://marceloicampos.github.io/challenge-oracle-logica-decoder-ptbr-main/" target="_blank"
-                            ><input type="button" value="Demo"
-                        /></a>
-                    </p>
-                    <p><a class="shc-top-link" href="./index.html#topo">PARA O TOPO</a></p>
-                </article>
+            <section class="experience-container" id="projetos">
+                <h1 class="experience-titulo">Projetos</h1>
+                <section class="experience-top">
+                    <div class="experience-item">
+                        <img class="experience-img-decoder" src="./images/logo_projeto_decoder.svg" alt="logo do projeto decoder" />
+                        <div class="experience-infos-decoder">
+                            <h1 class="experience-infos-titulo">Decodificador de texto</h1>
+                            <p class="experience-infos-texto">Challenge Alura Codificador</p>
+                            <div class="experience-infos-botao">
+                                <button class="experience-infos-botao-claro">
+                                    <a
+                                        class="experience-infos-botao-claro-texto"
+                                        href="https://github.com/marceloicampos/challenge-oracle-logica-decoder-ptbr-main"
+                                        target="_blank"
+                                        >Repositório</a
+                                    >
+                                </button>
+                                <button class="experience-infos-botao-escuro">
+                                    <a
+                                        class="experience-infos-botao-escuro-texto"
+                                        href="https://marceloicampos.github.io/challenge-oracle-logica-decoder-ptbr-main/"
+                                        target="_blank"
+                                        >Demo</a
+                                    >
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience-item">
+                        <img class="experience-img-forca" src="./images/logo_projeto_forca.svg" alt="logo do projeto jogo da forca" />
+                        <div class="experience-infos-forca">
+                            <h1 class="experience-infos-titulo">Decodificador de texto</h1>
+                            <p class="experience-infos-texto">Challenge Alura Codificador</p>
+                            <div class="experience-infos-botao">
+                                <button class="experience-infos-botao-claro">
+                                    <a
+                                        class="experience-infos-botao-claro-texto"
+                                        href="https://github.com/marceloicampos/challenge-oracle-logica-hangman-ptbr-main"
+                                        target="_blank"
+                                        >Repositório</a
+                                    >
+                                </button>
+                                <button class="experience-infos-botao-escuro">
+                                    <a
+                                        class="experience-infos-botao-escuro-texto"
+                                        href="https://marceloicampos.github.io/challenge-oracle-logica-hangman-ptbr-main/"
+                                        target="_blank"
+                                        >Demo</a
+                                    >
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <p><a class="shc-top-link" href="./index.html#topo">PARA O TOPO</a></p>
             </section>
-            <section class="contact">
-                <article id="contato">
-                    <h1>Contato</h1>
-                    <img src="./images/logo_contato.svg" alt="logo contato" />
-                    <p>Quer entrar em contato comigo ?</p>
-                    <p>Preencha o formulário abaixo e entrarei em contato o mais rápido possível !</p>
-                    <p>Nome:</p>
-                    <input type="text" placeholder="Seu Nome" />
-                    <p>E-mail:</p>
-                    <input type="email" placeholder="E-mail de Contato" />
-                    <p>Assunto:</p>
-                    <input type="text" placeholder="Assunto" />
-                    <p>Mensagem:</p>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
-                    <p><input type="button" value="Enviar Mensagem" /></p>
-                    <p><a class="shc-top-link" href="./index.html#topo">PARA O TOPO</a></p>
-                </article>
+            <section class="contact-container" id="contato">
+                <section class="contact-sub-container">
+                    <section class="contact-top">
+                        <figure><img class="contact-img" src="./images/logo_contato.svg" alt="logo contato" /></figure>
+                        <aside class="contact-aside">
+                            <section class="contact-aside-top">
+                                <h1 class="contact-aside-top-titulo">Contato</h1>
+                                <h2 class="contact-aside-top-sub-titulo">Quer entrar em contato comigo ?</h2>
+                                <h2 class="contact-aside-top-sub-titulo">Preencha o formulário abaixo e entrarei em contato o mais rápido possível !</h2>
+                            </section>
+                            <form action="" class="contact-aside-form" name="form">
+                                <div class="contact-aside-form-nome">
+                                    <div class="contact-aside-form-elementos">
+                                        <div class="contact-aside-form-inside">
+                                            <p class="contact-aside-form-texto">Nome:</p>
+                                            <input class="contact-aside-form-input" type="text" placeholder="Seu Nome" name="nome" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contact-aside-form-mail">
+                                    <div class="contact-aside-form-elementos">
+                                        <div class="contact-aside-form-inside">
+                                            <p class="contact-aside-form-texto">E-mail</p>
+                                            <input class="contact-aside-form-input" type="email" placeholder="E-mail de Contato" name="email" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contact-aside-form-assunto">
+                                    <div class="contact-aside-form-elementos">
+                                        <div class="contact-aside-form-inside">
+                                            <input class="contact-aside-form-input" type="text" placeholder="Assunto da Mensagem" name="assunto" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contact-aside-form-mensagem">
+                                    <div class="contact-aside-form-elementos">
+                                        <div class="contact-aside-form-inside">
+                                            <textarea
+                                                class="contact-aside-form-textarea"
+                                                id="mensagem"
+                                                cols="40"
+                                                rows="5"
+                                                placeholder="Mensagem"
+                                                name="mensagem"
+                                            ></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div><button class="contact-aside-botao" type="submit" id="submit">Enviar Mensagem</button></div>
+                            </form>
+                        </aside>
+                        <p><a class="shc-top-link" href="./index.html#topo">PARA O TOPO</a></p>
+                    </section>
+                </section>
             </section>
         </main>
         <footer class="foot">
