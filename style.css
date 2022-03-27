@@ -276,7 +276,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 82px;
+    padding: 64px;
     max-width: 1440px;
     align-self: stretch;
     background-color: #c2d9f8;
@@ -768,6 +768,39 @@ body {
     font-size: 16px;
     line-height: 19px;
     color: #ffffff;
+}
+
+/* CSS PÁGINA CONTATO SUCESSO*/
+
+.sucesso-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.sucesso-text {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: #464646;
+    margin-top: 16px;
+}
+
+.sucesso-link {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #464646;
+    margin: 16px 0;
+}
+
+.sucesso-link:hover {
+    text-decoration: underline;
 }
 
 /* CSS DO RODAPÉ */
