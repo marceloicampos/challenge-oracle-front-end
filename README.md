@@ -5,6 +5,6 @@ Challenge Oracle Front End
 
 27/03/2022 - Entrega do Projeto
 
-## [Preview - CLIQE AQUI](https://marceloicampos.github.io/challenge-oracle-front-end/)
+## [Preview - CLIQUE AQUI](https://marceloicampos.github.io/challenge-oracle-front-end/)
 
 ![](https://raw.githubusercontent.com/marceloicampos/challenge-oracle-front-end/main/preview.png)
