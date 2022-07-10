@@ -7,4 +7,4 @@ Challenge Oracle Front End
 
 ## [PROJETO - CLIQUE AQUI](https://marceloicampos.github.io/challenge-oracle-front-end-portfolio/)
 
-![](https://raw.githubusercontent.com/marceloicampos/challenge-oracle-front-end/main/preview.png)
+![](https://raw.githubusercontent.com/marceloicampos/challenge-oracle-front-end-portfolio/main/images/portfolio.png)
